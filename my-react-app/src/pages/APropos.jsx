@@ -1,6 +1,7 @@
 // APropos.jsx : Page d'informations sur l'application Kasa
 // Affiche un texte de présentation et des informations utiles
 
+import { useState } from 'react';
 import '../styles/APropos.css'; // Styles de la page
 import aproposImage from '../assets/apropos.png';
 import arrowUp from '../assets/arrow-up.svg';
@@ -25,9 +26,9 @@ function APropos() {
     return (
         <div className="apropos-container">
             {/* Titre de la page */}
-            <h1>À propos de Kasa</h1>
+            {/* <h1>À propos de Kasa</h1> */}
             {/* Contenu d'information */}
-            <p>Bienvenue sur Kasa, la plateforme de location d'appartements entre particuliers.</p>
+            {/* <p>Bienvenue sur Kasa, la plateforme de location d'appartements entre particuliers.</p> */}
             <div className="apropos-hero">
                 <img src={aproposImage} alt="Paysage montagneux" className="apropos-hero-image" />
             </div>
