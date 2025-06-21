@@ -1,5 +1,5 @@
 .header {
-    padding: 20px 0;
+    padding: 0;
     width: 100%;
     background-color: white;
     /* position: fixed;/*
@@ -9,9 +9,9 @@
 }
 
 .header-container {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 20px;
+    /* max-width: 1240px; */
+    margin: 43px 100px;
+    /* padding: 0 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,9 +53,15 @@
     color: #000000;
 }
 
+@media (max-width: 1024px) {
+    .header-container {
+        margin: 20px 50px;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
-        padding: 15px 0;
+        padding: 0;
     }
 
     .logo-image {
@@ -73,5 +79,9 @@
     .nav-link {
         font-size: 18px;
         text-transform: uppercase;
+    }
+
+    .header-container {
+        margin: 20px;
     }
 }

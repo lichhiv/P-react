@@ -56,14 +56,26 @@ body {
 }
 
 .card {
-  padding: 2em;
+  /* padding: 2em; */
 }
 
 .read-the-docs {
   color: #888;
 }
 
-main {}
+.header,
+.hero,
+main {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
 
 .cards-zone {
   background: #F6F6F6;

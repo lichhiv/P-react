@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { fetchLogements } from '../services/api';
 import arrowUp from '../assets/arrow-up.svg';
 import arrowDown from '../assets/arrow-down.svg';
@@ -7,9 +7,15 @@ import arrowLeft from '../assets/arrow-left.svg';
 import arrowRight from '../assets/arrow-right.svg';
 import './LogementDetail.css';
 
-const LogementDetail = () => {
+// LogementDetail.jsx : Composant qui affiche les détails d'un logement sélectionné
+// Utilise l'identifiant dans l'URL pour afficher le bon logement
+
+// Composant principal
+function LogementDetail() {
+    // Récupère l'identifiant du logement depuis l'URL
     const { id } = useParams();
     const navigate = useNavigate();
+    const location = useLocation();
     const [logement, setLogement] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [loading, setLoading] = useState(true);
@@ -149,6 +155,7 @@ const LogementDetail = () => {
             </div>
         </div>
     );
-};
+}
 
+// Exportation du composant
 export default LogementDetail; 
