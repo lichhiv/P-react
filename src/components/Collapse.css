@@ -1,0 +1,79 @@
+/* Collapse.css : Styles pour le composant Collapse réutilisable */
+
+.collapse {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.collapse-header {
+    background-color: #FF6060;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.collapse-header:hover {
+    background-color: #e55555;
+}
+
+.collapse-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.collapse-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.collapse-content {
+    background-color: #F6F6F6;
+    color: #000000;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+}
+
+/* Styles spécifiques pour le contenu */
+.collapse-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.collapse-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.collapse-content li {
+    margin: 5px 0;
+    color: #000000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .collapse-header {
+        padding: 10px 15px;
+    }
+
+    .collapse-title {
+        font-size: 16px;
+    }
+
+    .collapse-content {
+        padding: 15px;
+    }
+
+    .collapse-arrow {
+        width: 18px;
+        height: 18px;
+    }
+}
